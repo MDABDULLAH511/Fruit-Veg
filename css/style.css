@@ -1,0 +1,395 @@
+/* font-family: 'Montserrat', sans-serif; */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+.topbar {
+    background: #063;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+}
+
+.topbar .contact-info a {
+    line-height: 1;
+    color: #FFF;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.topbar .contact-info a:hover {
+    color: #f7972e;
+}
+
+.topbar .contact-info i {
+    color: #f7972e;
+    padding-right: 4px;
+    margin-right: 5px;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.topbar .social-links a {
+    color: #fff;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.topbar .social-links a:hover {
+    color: #f7972e;
+}
+
+.topbar .social-links a:first-child {
+    border-left: 0;
+}
+
+
+/*--------------------------------------------------------------
+#   header Section
+--------------------------------------------------------------*/
+#header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 0;
+    box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+}
+
+.navbar-brand {
+    width: 20%;
+}
+
+/* ----------- Nanv Menu ----------- */
+.navbar-expand-lg .navbar-nav .nav-item {
+    margin: 0px 15px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 0;
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #f7972e;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i {
+
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0%;
+    background-color: #f7972e;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+
+    opacity: 1;
+    width: 100%;
+
+}
+
+/* ----------- Dropdown Item  ----------- */
+
+.dropdown-item:hover {
+    color: #f7972e;
+    background-color: transparent;
+}
+
+.dropdown .dropdown-menu.show {
+    display: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+    transition: .3s all ease-in-out;
+}
+
+.dropdown:focus .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu {
+    margin-top: 5px;
+}
+
+/* ----------- Find Out More Button  ----------- */
+
+.find_out_btn {
+    color: #fff;
+    background: #006633;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 500px;
+    transition: .3s all ease-in-out;
+}
+
+.find_out_btn:hover {
+    background-color: #f7972e;
+}
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    min-height: 77vh;
+    background: url(../images/hero\ bg.png) top center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .1;
+}
+
+.hero_content {
+    position: relative;
+    background: #FFF;
+    padding: 50px 20px;
+    border-radius: 20px;
+    opacity: .9;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #006633;
+
+}
+
+.kalender_btn a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 35px;
+    margin: 30px 0px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #006633;
+}
+
+.kalender_btn a:hover {
+    background: #f7972e;
+}
+
+/*--------------------------------------------------------------
+# Seasonal Part
+--------------------------------------------------------------*/
+.seasonal_part {
+    padding: 60px 0;
+}
+
+.seasonal_part_content p {
+    padding-right: 20px;
+}
+
+.seasonal_part_img img {
+
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# For All Season Part
+--------------------------------------------------------------*/
+.season {
+    padding: 60px 0;
+}
+
+/* season_header  */
+.season_header {}
+
+.season_header h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #006633;
+}
+
+.season_header h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.season_header h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #f7972e;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.season_text p {
+    padding: 0 15px;
+}
+
+.season_img img {}
+
+/* ============ Autumn_Season ============ */
+.bg_paralax {
+    background-image: url(../images/autumn\ season.webp);
+    min-height: 550px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ============ Spring Season ============ */
+.spring_season {
+    background-image: url(../images/spring_season\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.spring_season_text_bg {
+    background-color: #fff;
+    opacity: .9;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# Learn More button Part
+--------------------------------------------------------------*/
+
+.learn_more_bg {
+    background-image: url(../images/learn\ more.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding: 30px 0;
+    color: #fff;
+    z-index: 99;
+
+}
+
+.learn_more_bg::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .1;
+    z-index: -1;
+}
+.learn_more_bg a{
+background-color: #f7972e;
+}
+
+.learn_more_bg a:hover{
+    background-color: #006633;
+    }
+    
+
+/*--------------------------------------------------------------
+# Footer Part
+--------------------------------------------------------------*/
+.footer_part {
+
+    padding: 15px 0;
+    background: #006633;
+}
+
+.footer_part p {
+
+    margin: 0;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.social_icon_bottom ul{
+list-style: none;
+margin: 0;
+display: flex;
+}
+
+.social_icon_bottom ul li{ 
+font-size: 16px;   
+height: 40px;    
+width: 40px;    
+line-height: 40px;   
+border: 1px solid #fff;   
+text-align: center;  
+border-radius: 50%;  
+margin: 0 10px; 
+transition: .5s all ease-in-out;
+}
+.social_icon_bottom ul li:hover {
+    border: 1px solid #f7972e;
+    background-color: #f7972e;
+}
+
+.social_icon_bottom ul li a{
+   color: #fff;
+}
+
+
